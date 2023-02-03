@@ -1,0 +1,365 @@
+.page{
+    width: 100%;
+    min-height: 100%;
+    max-width: 1240px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: flex-start;
+
+    margin: 0 auto;
+    padding: 0 20px 20px;
+}
+
+.infos{
+    width: 50%;
+}
+
+.infos__title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    padding-bottom: 22px;
+
+    color: var(--text-color);
+}
+
+.infos__content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.infos__col{
+    width: 50%;
+    padding-right: 20px;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.info__title{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    color: var(--text-color);
+    opacity: .8;
+
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+.info__text{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+
+    color: var(--text-color);
+
+    margin-bottom: 20px;
+}
+
+.stats{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.stat_wrapper{
+    width: 50%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.stat{
+    width: 100%;
+    min-height: 167px;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 20px 30px 25px 40px;
+
+    position: relative;
+}
+
+.stat__number{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+
+    color: var(--primary-color);
+
+    display: inline-block;
+    position: relative;
+}
+
+.stat__number:after{
+    content: '+';
+    font-size: 33px;
+    font-weight: 300;
+    position: absolute;
+    right: -24px;
+    top: 2px;
+}
+
+.stat__text{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    color: var(--text-color);
+
+    position: relative;
+    padding-left: 45px;
+}
+
+.stat__text:before{
+    background: #777;
+
+    content: "";
+    height: 1px;
+
+    position: absolute;
+    left: 0;
+    top: 13px;
+    width: 30px;
+}
+
+.inf_stat_wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.experience_education{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.timeline{
+    width: 50%;
+    padding: 0 15px;
+}
+
+.timeline__title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+    text-transform: uppercase;
+
+    margin-bottom: 35px;
+
+    color: var(--text-color);
+}
+
+.timeline__item{
+    position: relative;
+    width: 100%;
+}
+
+.timeline__item:not(:last-child){
+    padding-bottom: 50px;
+}
+
+.timeline__item:before{
+    height: 100%;
+    position: absolute;
+    left: 7px;
+    top: 0;
+    width: 1px;
+
+    content: '';
+    border-left: 1px solid var(--primary-color);
+    opacity: .6;
+}
+
+.bullet{
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    background-color: var(--bg-color);
+}
+
+.bullet_selected{
+    background-color: var(--primary-color) !important;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    margin-left: 39px;
+    width: calc(100% - 39px);
+}
+
+.card__year{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+
+    color: var(--text-color);
+}
+
+.card__year>:first-child{
+    margin-right: 7px;
+}
+
+.card__title{
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+
+.card__title__first{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    color: var(--text-color);
+}
+
+.separator{
+    display: inline-block;
+    height: 2px;
+    width: 10px;
+    vertical-align: middle;
+
+    background: var(--grey-color);
+
+    margin: 0 7px 3px 7px;
+}
+
+.card__title__second{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    color: var(--text-color);
+}
+
+.card__text{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+
+    color: var(--text-color);
+}
+
+.skills{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 50px;
+}
+
+.skills__title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+    text-transform: uppercase;
+
+    margin-bottom: 35px;
+
+    color: var(--text-color);
+}
+
+.skills__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.skill{
+    position: relative;
+    width: calc(100% / 3);
+    padding: 0 13px;
+}
+
+.skill__text{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    color: var(--text-color);
+
+    margin-bottom: 18px;
+}
+
+.chart_percent{
+    position: relative;
+
+    background: var(--grey-color);
+
+    width: 100%;
+    height: 1px;
+
+    margin-bottom: 45px;
+}
+
+.chart_percent__progress{
+    background-color: var(--primary-color);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+}
+
+.chart_percent__percent{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    line-height: 31px;
+
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    color: var(--primary-color);
+
+    position: absolute;
+    height: 32px;
+    margin-top: -41px;
+    top: 50%;
+    left: calc(80% - 23px);
+    padding-left: 7px;
+    padding-right: 7px;
+
+    z-index: 5;
+}
+
+.chart_percent__percent__arrow{
+    background: var(--bg-color);
+    border: solid var(--primary-color);
+    border-width: 0 1px 1px 0;
+
+    display: inline-block;
+    padding: 4px;
+    transform: translateY(33.5px) rotate(45deg) skew(3deg, 3deg) translateX(-27px);
+    bottom: 8px;
+    position: absolute;
+}

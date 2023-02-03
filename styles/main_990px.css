@@ -1,0 +1,35 @@
+@media (max-width: 990px){
+    .page_menu{
+        background: var(--grey-color);
+        left: 0;
+        bottom: 0;
+        top: auto;
+        right: auto;
+        transform: none;
+
+        padding: 8px;
+        width: 100%;
+        z-index: 10;
+
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .page_wrapper{
+        padding-bottom: 70px;
+    }
+
+    .page_menu__button{
+        margin: 0;
+    }
+
+    .page_menu__button__h2_wrapper{
+        display: none;
+    }
+
+    .title h2{
+        font-size: 35px;
+        line-height: 1.2;
+    }
+}

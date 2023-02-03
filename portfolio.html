@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <script src="https://kit.fontawesome.com/3c0ccbc485.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main_990px.css">
+    <link rel="stylesheet" href="styles/text.css">
+    <link rel="stylesheet" href="styles/portfolio.css">
+    <link rel="stylesheet" href="styles/portfolio_990px.css">
+    <link rel="stylesheet" href="styles/magic_mouse.css">
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="styles/swiper_custom.css">
+</head>
+<body>
+    <div id="preloader"></div>
+
+    <nav class="page_menu">
+        <a class="page_menu__button magic-hover" href="index.html">
+            <div class="page_menu__button__h2_wrapper">
+                <h2>HOME</h2>
+            </div>
+            <i class="fa-solid fa-home"></i>
+        </a>
+        <a class="page_menu__button magic-hover" href="about.html">
+            <div class="page_menu__button__h2_wrapper">
+                <h2>ABOUT</h2>
+            </div>
+            <i class="fa-solid fa-user"></i>
+        </a>
+        <a class="page_menu__button magic-hover page_menu__button_active" href="portfolio.html">
+            <div class="page_menu__button__h2_wrapper">
+                <h2>PORTFOLIO</h2>
+            </div>
+            <i class="fa-solid fa-briefcase"></i>
+        </a>
+        <a class="page_menu__button magic-hover" href="contact.html">
+            <div class="page_menu__button__h2_wrapper">
+                <h2>CONTACT</h2>
+            </div>
+            <i class="fa-solid fa-envelope-open"></i>
+        </a>
+    </nav>
+    <div class="page_wrapper">
+        <div class="page">
+            <div class="title">
+                <h2>MY <span class="yellow">PORTFOLIO</span></h2>
+                <span class="title__subtitle">A few recent projects</span>
+            </div>
+            <div class="projects">
+
+                <div class="project" onclick="open_modal({
+                    'project_name': 'Portfolio Website',
+                    'project_type': 'website',
+                    'technologies': 'html, css, js',
+                    'from': 'pet project',
+                    'preview': 'https://github.com/IronGunYT/IronGunYT',
+                    'images': ['images/project-2.jpg'],
+                });">
+                    <div class="project__card">
+                        <img src="images/project-2.jpg" alt="project">
+                        <div class="project__card__text">
+                            <span>Project 1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project" onclick="open_modal({
+                    'project_name': 'Portfolio Website',
+                    'project_type': 'website',
+                    'technologies': 'html, css, js',
+                    'from': 'pet project',
+                    'preview': 'https://github.com/IronGunYT/IronGunYT',
+                    'images': ['images/project-2.jpg', 'images/project-2.jpg'],
+                });">
+                    <div class="project__card">
+                        <img src="images/project-2.jpg" alt="project">
+                        <div class="project__card__text">
+                            <span>Project 2</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal_wrapper">
+        <div class="modal">
+            <p class="modal__title">Project 2</p>
+            <div class="modal__info">
+                <div class="modal__info__col">
+                    <div class="info">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        <span class="info__title">Project:</span>
+                        <span class="info__text" data-modal-row="project">website</span>
+                    </div>
+                    <div class="info">
+                        <i class="fa fa-code" aria-hidden="true"></i>
+                        <span class="info__title">Technologies:</span>
+                        <span class="info__text" data-modal-row="technologies">Python, C++, Django, Selenium</span>
+                    </div>
+                </div>
+                <div class="modal__info__col">
+                    <div class="info">
+                        <i class="fa fa fa-user-o" aria-hidden="true"></i>
+                        <span class="info__title">From:</span>
+                        <span class="info__text" data-modal-row="from">freelance</span>
+                    </div>
+                    <div class="info">
+                        <i class="fa fa-external-link" aria-hidden="true"></i>
+                        <span class="info__title">Preview:</span>
+                        <span class="info__text magic-hover magic-hover__square">
+                            <a class="preview_link" target="_blank" href="https://github.com/IronGunYT" data-modal-row="preview">*click*</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal_media">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev magic-hover magic-hover__square"></div>
+                    <div class="swiper-button-next magic-hover magic-hover__square"></div>
+                </div>
+            </div>
+            <a class="modal__close magic-hover" onclick="close_modal();">
+                <i class="fa-solid fa-times"></i>
+            </a>
+        </div>
+    </div>
+
+    <script src="scripts/slider_load.js"></script>
+    <script src="scripts/portfolio_modal.js"></script>
+    <script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1636192990/magicmouse/magic_mouse-1.2.1.cdn.min.js"></script>
+    <script src="scripts/magic_mouse_config.js"></script>
+    <script src="scripts/preloader.js"></script>
+</body>
+</html>

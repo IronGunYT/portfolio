@@ -1,0 +1,11 @@
+@media (max-width: 990px){
+    .project{
+        width: calc(100% / 2);
+    }
+}
+
+@media (max-width: 580px) {
+    .project{
+        width: 100%;
+    }
+}
