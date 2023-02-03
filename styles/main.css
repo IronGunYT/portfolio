@@ -12,8 +12,17 @@
     --grey-color: #555555;
 }
 
+img::-moz-selection{
+    background-color: transparent;
+}
+
 img::selection{
     background-color: transparent;
+}
+
+::-moz-selection{
+    background-color: var(--primary-color);
+    color: var(--text-color);
 }
 
 ::selection{
@@ -39,6 +48,7 @@ img::selection{
 *, body{
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 
     cursor: none!important;
@@ -70,6 +80,10 @@ body{
     left: 0;
     z-index: 9999;
 
+    -webkit-transition: all 1s ease-in-out;
+
+    -o-transition: all 1s ease-in-out;
+
     transition: all 1s ease-in-out;
 }
 
@@ -77,12 +91,25 @@ body{
     position: fixed;
     right: 30px;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     z-index: 2;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: flex-end;
 }
 
@@ -94,16 +121,30 @@ body{
     border-radius: 25px;
     color: var(--text-color);
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 
     margin: 15px 0;
+
+    -webkit-transition: all .3s;
+
+    -o-transition: all .3s;
 
     transition: all .3s;
 }
 
 .page_menu__button *{
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
     transition: all .3s;
 }
 
@@ -123,8 +164,16 @@ body{
 
     padding: 0 62px 0 26px;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
 
     background-color: var(--primary-color);
@@ -219,4 +268,3 @@ hr.separator{
     margin: 70px auto;
     border: 0;
 }
-
