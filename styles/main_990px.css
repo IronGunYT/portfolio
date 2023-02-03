@@ -43,4 +43,12 @@
         font-size: 35px;
         line-height: 1.2;
     }
+
+    .title__subtitle::after{
+        display: none;
+    }
+
+    .title__subtitle::before{
+        display: none;
+    }
 }
