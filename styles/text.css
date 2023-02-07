@@ -16,6 +16,7 @@
     font-size: 50px;
     font-weight: 700;
     line-height: 62px;
+    text-transform: uppercase;
 
     color: var(--text-color);
 }
